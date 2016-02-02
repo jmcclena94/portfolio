@@ -13,7 +13,7 @@ function blog (data) {
 }
 
 blog.prototype.toHtml = function() {
-  var $newBlog = $('article.template').clone();
+  var $newBlog = $('article.blogTemplate').clone();
 
   $newBlog.attr('data-category',this.category);
 
@@ -36,16 +36,8 @@ blogData.forEach(function(ele) {
   blogs.push(new blog(ele));
 })
 
-blogs.forEach(function(a){
-  $('#blog').append(a.toHtml());
+$('#blogLink').one('click',function(){
+  blogs.forEach(function(a){
+    $('#blog').append(a.toHtml());
+  });
 });
-
-// $('#blogLink').hover(function(){
-//   $(this).css('curson','pointer');
-// });
-//
-// $('#blogLink').click(function(){
-//   blogs.forEach(function(a) {
-//     $('#content').append(a.toHtml());
-//   });
-// });

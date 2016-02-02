@@ -10,3 +10,20 @@ var blogData = [{
   publishedOn: '2016-02-01',
   category: 'about',
 }];
+
+var socData = [{
+  name: 'twitter',
+  link: 'https://twitter.com/beverlyfreaks',
+  },
+  {
+  name: 'facebook',
+  link: 'https://www.facebook.com/joe.mcclenahan',
+  },
+  {
+  name: 'github',
+  link: 'https://github.com/jmcclena94',
+  },
+  {
+  name: 'instagram',
+  link: 'https://www.instagram.com/beverlyfreaks/',
+}];

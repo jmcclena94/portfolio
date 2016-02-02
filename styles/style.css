@@ -1,3 +1,7 @@
+body {
+  margin: 2% 2% 2% 2%;
+}
+
 .page_header h1 {
   font-family: 'Arvo', serif;
   font-size: 6vw;
@@ -15,7 +19,7 @@
   font-size: 4vw
 }
 
-.template {
+.blogTemplate {
   display: none;
 }
 
@@ -25,4 +29,31 @@
 
 .blogPost h3 {
   font-size: 1.5vw;
+}
+
+.blogPost p {
+  font-size: 2vw;
+}
+
+.socialTemplate {
+  display: none;
+}
+
+.social ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.social ul li {
+  font-family: 'Arvo', serif;
+  font-size: 3vw;
+  text-align: center;
+}
+
+.social ul li a {
+  text-decoration: none;
+  color: black;
 }

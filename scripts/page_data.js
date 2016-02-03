@@ -27,3 +27,11 @@ var socData = [{
   name: 'instagram',
   link: 'https://www.instagram.com/beverlyfreaks/',
 }];
+
+var portfolioData = [{
+  name:'Drink With a Cold One',
+  url: 'http://lwenke01.github.io/virtual-drunks-project/',
+  description:'A virtual drinking game where you drink with a deceased historical figure.  They can insult you using their own quotations.  This game was created as a Code Fellows 201 final project.',
+}
+
+];

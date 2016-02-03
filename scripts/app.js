@@ -6,14 +6,14 @@ var blogs = [];
 
 function blog (data) {
   this.author = data.author;
-  this.bio = data.bio
+  this.bio = data.bio;
   this.publishedOn = data.publishedOn;
   this.title = data.title;
   this.category = data.category;
 }
 
 blog.prototype.toHtml = function() {
-  var $newBlog = $('article.blogTemplate').clone();
+  var $newBlog = $('article.blog_template').clone();
 
   $newBlog.attr('data-category',this.category);
 
@@ -27,16 +27,16 @@ blog.prototype.toHtml = function() {
   $newBlog.append('<hr>');
 
   $newBlog.removeClass();
-  $newBlog.addClass('blogPost');
+  $newBlog.addClass('blog_post');
 
   return $newBlog;
-}
+};
 
 blogData.forEach(function(ele) {
   blogs.push(new blog(ele));
-})
+});
 
-$('#blogLink').one('click',function(){
+$('#blog_link').one('click',function(){
   blogs.forEach(function(a){
     $('#blog').append(a.toHtml());
   });

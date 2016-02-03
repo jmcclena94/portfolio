@@ -19,23 +19,23 @@ body {
   font-size: 4vw
 }
 
-.blogTemplate {
+.blog_template {
   display: none;
 }
 
-.blogPost h1 {
+.blog_post h1 {
   font-size: 3vw;
 }
 
-.blogPost h3 {
+.blog_post h3 {
   font-size: 1.5vw;
 }
 
-.blogPost p {
+.blog_post p {
   font-size: 2vw;
 }
 
-.socialTemplate {
+.social_template {
   display: none;
 }
 
@@ -56,4 +56,22 @@ body {
 .social ul li a {
   text-decoration: none;
   color: black;
+}
+
+.portfolio_template {
+  display: none;
+}
+
+.portfolio_post h1 {
+  font-size: 3vw;
+}
+
+.portfolio_post a {
+  text-decoration: none;
+  color: black;
+  font-size:2.5vw;
+}
+
+.portfolio_post p {
+  font-size: 1.5vw;
 }

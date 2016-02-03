@@ -31,7 +31,7 @@ $('#blog_link').on('click',function(){
   $('.blog_filter').css('display','block');
   $('#social').hide();
   $('#portfolio').hide();
-  $('#blog').show();
+  $('#blog').fadeIn();
 });
 
 $('#portfolio_link').on('click',function(){
@@ -43,7 +43,7 @@ $('#portfolio_link').on('click',function(){
   $(viewer.populatePortfolioFilter());
   $('.portfolio_filter').css('display','block');
   $('#social').hide();
-  $('#portfolio').show();
+  $('#portfolio').fadeIn();
   $('#blog').hide();
 });
 
@@ -53,7 +53,9 @@ $('#social_link').on('click',function(){
       $('#social_list').append(a.toHtml());
     });
   }
-  $('#social').show();
+  $('#social').fadeIn();
   $('#portfolio').hide();
   $('#blog').hide();
 });
+
+$('#blog_link').click();

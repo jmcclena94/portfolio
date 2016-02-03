@@ -1,5 +1,6 @@
 body {
   margin: 2% 2% 2% 2%;
+  background-color: rgb(200,200,200);
 }
 
 .page_header h1 {
@@ -45,10 +46,12 @@ body {
 }
 
 .blog_post h1 {
+  font-family: 'Arvo', serif;
   font-size: 3vw;
 }
 
 .blog_post h3 {
+  font-family: 'Arvo', serif;
   font-size: 1.5vw;
 }
 
@@ -123,10 +126,12 @@ body {
 }
 
 .portfolio_post h1 {
+  font-family: 'Arvo', serif;
   font-size: 3vw;
 }
 
 .portfolio_post a {
+  font-family: 'Arvo', serif;
   text-decoration: none;
   color: black;
   font-size:2.5vw;

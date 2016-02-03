@@ -4,32 +4,43 @@
   <title>Portfolio</title>
   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
   <link href="styles/style.css" type="text/css" rel="stylesheet"/>
+  <link href="vendors/icomoon/style.css" type="text/css" rel="stylesheet"/>
 </head>
 <div id="page">
   <header class="page_header">
     <h1>Joe McClenahan</h1>
     <ul>
-      <li id="blogLink">Blog</li>
-      <li id="socialLink">Social</li>
-      <li id="portfolioLink">Portfolio</li>
+      <li id="blog_link">Blog</li>
+      <li id="social_link">Social</li>
+      <li id="portfolio_link">Portfolio</li>
     </ul>
   </header>
   <div id="content">
-    <section id="blog">
-      <article class="blogTemplate" data-category="category">
-        <h1 class="blogTitle">Title</h1>
-        <h3 class="blogAuthor">Author</h3>
+    <section id="blog" class="blog">
+      <select id="blog_filter" class="blog_filter">
+        <option value="">-- Filter by Blog Title --</option>
+      </select>
+      <article class="blog_template" data-category="category">
+        <h1 class="blog_title">Title</h1>
+        <h3 class="blog_author">Author</h3>
         <time pubdate datetime="2000-01-01">Publish Time</time>
-        <p class="blogText">About Me</p>
+        <p class="blog_text">About Me</p>
       </article>
     </section>
-    <section class="social">
-      <ul id="social">
-        <li class="socialTemplate"><a href="">Social</a></li>
+    <section id="social" class="social">
+      <ul id="social_list">
+        <li class="social_template"><a href="">Social</a></li>
       </ul>
-
     </section>
-
+    <section id="portfolio" class="portfolio">
+      <select id="portfolio_filter" class="portfolio_filter">
+        <option value="">-- Filter by Portfolio Item --</option>
+      </select>
+      <article class="portfolio_template">
+        <h1 class="portfolio_item"><a href="">Title</a></h1>
+        <p class="portfolio_description">Description</p>
+      </article>
+    </section>
   </div>
   <footer>
   </footer>
@@ -38,4 +49,6 @@
 <script src="scripts/page_data.js"></script>
 <script src="scripts/app.js"></script>
 <script src="scripts/twitter.js"></script>
+<script src="scripts/portfolio.js"></script>
+<script src="scripts/viewer.js"></script>
 </html>

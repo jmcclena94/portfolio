@@ -10,13 +10,13 @@ function social (data) {
 }
 
 social.prototype.toHtml = function() {
-  var $newSoc = $('li.socialTemplate').clone();
+  var $newSoc = $('li.social_template').clone();
 
-  $newSoc.find('a').text(this.name);
-  $newSoc.find('a').attr('href',this.link);
+  $newSoc.find('a').text(this.name).attr('href',this.link).attr('id',this.name);
+  // $newSoc.find('a').attr('href',this.link);
 
   $newSoc.removeClass();
-  $newSoc.addClass('socialPost');
+  $newSoc.addClass('social_post');
 
   return $newSoc;
 };
@@ -25,8 +25,8 @@ socData.forEach(function(ele) {
   soc.push(new social(ele));
 });
 
-$('#socialLink').click(function(){
-  soc.forEach(function(a){
-    $('#social').append(a.toHtml());
-  });
-});
+// $('#social_link').click(function(){
+//   soc.forEach(function(a){
+//     $('#social_list').append(a.toHtml());
+//   });
+// });

@@ -19,23 +19,48 @@ body {
   font-size: 4vw
 }
 
-.blogTemplate {
+#blog_link:before {
+  margin-right: 10px;
+  content: "\e900";
+  font-family: 'icomoon';
+  speak: none;
+}
+
+#social_link:before {
+  margin-right: 10px;
+  content: "\e901";
+  font-family: 'icomoon';
+  speak: none;
+}
+
+#portfolio_link:before {
+  margin-right: 10px;
+  content: "\e908";
+  font-family: 'icomoon';
+  speak: none;
+}
+
+.blog_template {
   display: none;
 }
 
-.blogPost h1 {
+.blog_post h1 {
   font-size: 3vw;
 }
 
-.blogPost h3 {
+.blog_post h3 {
   font-size: 1.5vw;
 }
 
-.blogPost p {
+.blog_post p {
   font-size: 2vw;
 }
 
-.socialTemplate {
+.blog_filter {
+  display: none;
+}
+
+.social_template {
   display: none;
 }
 
@@ -56,4 +81,61 @@ body {
 .social ul li a {
   text-decoration: none;
   color: black;
+}
+
+#twitter:before {
+  margin-right: 10px;
+  content: "\e904";
+  font-family: 'icomoon';
+  speak: none;
+}
+
+#facebook:before {
+  margin-right: 10px;
+  content: "\e902";
+  font-family: 'icomoon';
+  speak: none;
+}
+
+#github:before {
+  margin-right: 10px;
+  content: "\e906";
+  font-family: 'icomoon';
+  speak: none;
+}
+
+#instagram:before {
+  margin-right: 10px;
+  content: "\e903";
+  font-family: 'icomoon';
+  speak: none;
+}
+
+#linkedin:before {
+  margin-right: 10px;
+  content: "\e907";
+  font-family: 'icomoon';
+  speak: none;
+}
+
+.portfolio_template {
+  display: none;
+}
+
+.portfolio_post h1 {
+  font-size: 3vw;
+}
+
+.portfolio_post a {
+  text-decoration: none;
+  color: black;
+  font-size:2.5vw;
+}
+
+.portfolio_post p {
+  font-size: 1.5vw;
+}
+
+.portfolio_filter {
+  display: none;
 }

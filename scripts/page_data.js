@@ -12,18 +12,30 @@ var blogData = [{
 }];
 
 var socData = [{
-  name: 'twitter',
-  link: 'https://twitter.com/beverlyfreaks',
+    name: 'twitter',
+    link: 'https://twitter.com/beverlyfreaks',
   },
   {
-  name: 'facebook',
-  link: 'https://www.facebook.com/joe.mcclenahan',
+    name: 'facebook',
+    link: 'https://www.facebook.com/joe.mcclenahan',
   },
   {
-  name: 'github',
-  link: 'https://github.com/jmcclena94',
+    name: 'github',
+    link: 'https://github.com/jmcclena94',
   },
   {
-  name: 'instagram',
-  link: 'https://www.instagram.com/beverlyfreaks/',
+    name: 'instagram',
+    link: 'https://www.instagram.com/beverlyfreaks/',
+  },
+  {
+    name: 'linkedin',
+    link: 'https://www.linkedin.com/in/josephmcclenahan',
 }];
+
+var portfolioData = [{
+  name:'Drink With a Cold One',
+  url: 'http://lwenke01.github.io/virtual-drunks-project/',
+  description:'A virtual drinking game where you drink with a deceased historical figure.  They can insult you using their own quotations.  This game was created as a Code Fellows 201 final project.',
+}
+
+];

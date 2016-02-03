@@ -19,6 +19,27 @@ body {
   font-size: 4vw
 }
 
+#blog_link:before {
+  margin-right: 10px;
+  content: "\e900";
+  font-family: 'icomoon';
+  speak: none;
+}
+
+#social_link:before {
+  margin-right: 10px;
+  content: "\e901";
+  font-family: 'icomoon';
+  speak: none;
+}
+
+#portfolio_link:before {
+  margin-right: 10px;
+  content: "\e908";
+  font-family: 'icomoon';
+  speak: none;
+}
+
 .blog_template {
   display: none;
 }
@@ -60,6 +81,41 @@ body {
 .social ul li a {
   text-decoration: none;
   color: black;
+}
+
+#twitter:before {
+  margin-right: 10px;
+  content: "\e904";
+  font-family: 'icomoon';
+  speak: none;
+}
+
+#facebook:before {
+  margin-right: 10px;
+  content: "\e902";
+  font-family: 'icomoon';
+  speak: none;
+}
+
+#github:before {
+  margin-right: 10px;
+  content: "\e906";
+  font-family: 'icomoon';
+  speak: none;
+}
+
+#instagram:before {
+  margin-right: 10px;
+  content: "\e903";
+  font-family: 'icomoon';
+  speak: none;
+}
+
+#linkedin:before {
+  margin-right: 10px;
+  content: "\e907";
+  font-family: 'icomoon';
+  speak: none;
 }
 
 .portfolio_template {

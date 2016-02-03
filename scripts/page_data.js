@@ -12,20 +12,24 @@ var blogData = [{
 }];
 
 var socData = [{
-  name: 'twitter',
-  link: 'https://twitter.com/beverlyfreaks',
+    name: 'twitter',
+    link: 'https://twitter.com/beverlyfreaks',
   },
   {
-  name: 'facebook',
-  link: 'https://www.facebook.com/joe.mcclenahan',
+    name: 'facebook',
+    link: 'https://www.facebook.com/joe.mcclenahan',
   },
   {
-  name: 'github',
-  link: 'https://github.com/jmcclena94',
+    name: 'github',
+    link: 'https://github.com/jmcclena94',
   },
   {
-  name: 'instagram',
-  link: 'https://www.instagram.com/beverlyfreaks/',
+    name: 'instagram',
+    link: 'https://www.instagram.com/beverlyfreaks/',
+  },
+  {
+    name: 'linkedin',
+    link: 'https://www.linkedin.com/in/josephmcclenahan',
 }];
 
 var portfolioData = [{

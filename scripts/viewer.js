@@ -36,3 +36,9 @@ $('#portfolio_link').one('click',function(){
   $(viewer.populatePortfolioFilter());
   $('.portfolio_filter').css('display','block');
 });
+
+$('#social_link').click(function(){
+  soc.forEach(function(a){
+    $('#social_list').append(a.toHtml());
+  });
+});

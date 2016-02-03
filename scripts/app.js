@@ -35,9 +35,3 @@ blog.prototype.toHtml = function() {
 blogData.forEach(function(ele) {
   blogs.push(new blog(ele));
 });
-
-$('#blog_link').one('click',function(){
-  blogs.forEach(function(a){
-    $('#blog').append(a.toHtml());
-  });
-});

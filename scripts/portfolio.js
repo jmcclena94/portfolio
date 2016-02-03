@@ -26,9 +26,3 @@ portfolio.prototype.toHtml = function() {
 portfolioData.forEach(function(ele) {
   portfolios.push(new portfolio(ele));
 });
-
-$('#portfolio_link').one('click',function(){
-  portfolios.forEach(function(a){
-    $('#portfolio').append(a.toHtml());
-  });
-});

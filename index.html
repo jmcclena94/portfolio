@@ -16,6 +16,9 @@
   </header>
   <div id="content">
     <section id="blog" class="blog">
+      <select id="blog_filter" class="blog_filter">
+        <option value="">-- Filter by Blog Title --</option>
+      </select>
       <article class="blog_template" data-category="category">
         <h1 class="blog_title">Title</h1>
         <h3 class="blog_author">Author</h3>
@@ -29,13 +32,14 @@
       </ul>
     </section>
     <section id="portfolio" class="portfolio">
+      <select id="portfolio_filter" class="portfolio_filter">
+        <option value="">-- Filter by Portfolio Item --</option>
+      </select>
       <article class="portfolio_template">
         <h1 class="portfolio_item"><a href="">Title</a></h1>
         <p class="portfolio_description">Description</p>
       </article>
-
     </section>
-
   </div>
   <footer>
   </footer>
@@ -45,4 +49,5 @@
 <script src="scripts/app.js"></script>
 <script src="scripts/twitter.js"></script>
 <script src="scripts/portfolio.js"></script>
+<script src="scripts/viewer.js"></script>
 </html>

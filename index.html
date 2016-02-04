@@ -6,6 +6,27 @@
   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
   <link href="styles/style.css" type="text/css" rel="stylesheet"/>
   <link href="vendors/icomoon/style.css" type="text/css" rel="stylesheet"/>
+
+  <script id="article_template" type="text/x-handlebars-template">
+    <article class="blog_entry" data-category="{{category}}">
+      <h1>{{title}}</h1>
+      <h3>{{author}}</h3>
+      <time pubdate datetime="2000-01-01">Published {{daysAgo}} days ago</time>
+      <section class="article_body">
+        {{{body}}}
+      </section>
+    </article>
+  </script>
+
+  <script id="portfolio_template" type="text/x-handlebars-template">
+    <article class="portfolio_entry">
+      <h1><a href="{{url}}">{{name}}</a></h1>
+      <section class="portfolio_body">
+        {{{description}}}
+      </section>
+    </article>
+  </script>
+
 </head>
 <body>
   <div id="page">
@@ -25,12 +46,6 @@
         <select id="blog_filter" class="blog_filter">
           <option value="">-- Filter by Blog Title --</option>
         </select>
-        <article class="blog_template" data-category="category">
-          <h1 class="blog_title">Title</h1>
-          <h3 class="blog_author">Author</h3>
-          <time pubdate datetime="2000-01-01">Publish Time</time>
-          <p class="blog_text">About Me</p>
-        </article>
       </section>
       <section id="social" class="social">
         <ul id="social_list">
@@ -41,19 +56,16 @@
         <select id="portfolio_filter" class="portfolio_filter">
           <option value="">-- Filter by Portfolio Item --</option>
         </select>
-        <article class="portfolio_template">
-          <h1 class="portfolio_item"><a href="">Title</a></h1>
-          <p class="portfolio_description">Description</p>
-        </article>
       </section>
     </div>
     <footer>
     </footer>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
   <script src="scripts/page_data.js"></script>
   <script src="scripts/app.js"></script>
-  <script src="scripts/twitter.js"></script>
+  <script src="scripts/social.js"></script>
   <script src="scripts/portfolio.js"></script>
   <script src="scripts/viewer.js"></script>
 </body>

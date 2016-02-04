@@ -11,7 +11,16 @@ var blogData = [{
   category: 'about',
 }];
 
-var socData = [{
+var socData = [
+  {
+    name: 'linkedin',
+    link: 'https://www.linkedin.com/in/josephmcclenahan',
+  },
+  {
+    name: 'github',
+    link: 'https://github.com/jmcclena94',
+  },
+  {
     name: 'twitter',
     link: 'https://twitter.com/beverlyfreaks',
   },
@@ -20,16 +29,8 @@ var socData = [{
     link: 'https://www.facebook.com/joe.mcclenahan',
   },
   {
-    name: 'github',
-    link: 'https://github.com/jmcclena94',
-  },
-  {
     name: 'instagram',
     link: 'https://www.instagram.com/beverlyfreaks/',
-  },
-  {
-    name: 'linkedin',
-    link: 'https://www.linkedin.com/in/josephmcclenahan',
 }];
 
 var portfolioData = [

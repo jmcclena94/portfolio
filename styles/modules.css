@@ -128,7 +128,6 @@
   .page_header h2 {
     display: block;
     width: 100%;
-    /*font-size: 10em;*/
   }
 
   .main_nav {
@@ -151,5 +150,13 @@
     list-style-type: none;
     justify-content: space-around;
     flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .page_header h2 {
+    font-size: 8em;
+    display: block;
+    width: 100%;
   }
 }

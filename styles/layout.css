@@ -1,0 +1,41 @@
+.page_header {
+  float: left;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+.main_nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.blog_template {
+  display: none;
+}
+
+.blog_filter {
+  display: none;
+}
+
+.social_template {
+  display: none;
+}
+
+.portfolio_template {
+  display: none;
+}
+
+.portfolio_filter {
+  display: none;
+}
+
+.article_body {
+  display: flex;
+  justify-content: flex-start;;
+}
+
+select {
+  display: block;
+  margin: 0 auto;
+}

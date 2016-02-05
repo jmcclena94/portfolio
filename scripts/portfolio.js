@@ -5,22 +5,14 @@
 var portfolios = [];
 
 function portfolio (data) {
-  this.name = data.name;
+  this.title = data.title;
   this.url = data.url;
   this.description = data.description;
 }
 
 portfolio.prototype.toHtml = function() {
-  var $newPortfolio = $('article.portfolio_template').clone();
-
-  $newPortfolio.find('a').attr('href',this.url).text(this.name);
-  $newPortfolio.find('p').text(this.description);
-  $newPortfolio.append('<hr>');
-
-  $newPortfolio.removeClass();
-  $newPortfolio.addClass('portfolio_post');
-
-  return $newPortfolio;
+  var template = Handlebars.compile($('#portfolio_template').text());
+  return template(this);
 };
 
 portfolioData.forEach(function(ele) {

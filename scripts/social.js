@@ -10,14 +10,8 @@ function social (data) {
 }
 
 social.prototype.toHtml = function() {
-  var $newSoc = $('li.social_template').clone();
-
-  $newSoc.find('a').text(this.name).attr('href',this.link).attr('id',this.name);
-
-  $newSoc.removeClass();
-  $newSoc.addClass('social_post');
-
-  return $newSoc;
+  var template = Handlebars.compile($('#social_template').text());
+  return template(this);
 };
 
 socData.forEach(function(ele) {

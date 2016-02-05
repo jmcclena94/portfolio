@@ -5,7 +5,7 @@
 var portfolios = [];
 
 function portfolio (data) {
-  this.name = data.name;
+  this.title = data.title;
   this.url = data.url;
   this.description = data.description;
 }

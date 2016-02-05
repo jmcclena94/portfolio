@@ -1,34 +1,13 @@
-body {
-  margin: 2% 2% 2% 2%;
-  background-color: rgb(200,200,200);
-}
-
-img {
-  max-width: 25%;
-}
-
-.page_header {
-  font-family: 'Arvo', serif;
-  font-size: 3vw;
+.page_header h2 {
   float: left;
-  width: 100%;
-  padding-bottom: 5%;
-}
-
-.page_header h1 {
-  float: left;
+  margin-top: 0;
+  margin-bottom: 5%;
 }
 
 .hamburger {
-  padding-top: 7%;
   padding-right: 5%;
+  padding-bottom: 5%;
   float: right;
-}
-
-.main_nav {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
 }
 
 .main_nav ul {
@@ -41,65 +20,34 @@ img {
 }
 
 .main_nav ul li {
-  font-family: 'Arvo', serif;
-  font-size: 4vw;
+  /*font-family: 'Arvo', serif;*/
+  font-size: 3em;
   text-align: right;
 }
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-#blog_link:after {
+#blog_link a:after {
   margin-left: 10px;
   content: "\e900";
   font-family: 'icomoon';
   speak: none;
 }
 
-#social_link:after {
+#social_link a:after {
   margin-left: 10px;
   content: "\e901";
   font-family: 'icomoon';
   speak: none;
 }
 
-#portfolio_link:after {
+#portfolio_link a:after {
   margin-left: 10px;
   content: "\e908";
   font-family: 'icomoon';
   speak: none;
 }
 
-.blog_template {
-  display: none;
-}
-
-.blog_post h1 {
-  font-family: 'Arvo', serif;
-  font-size: 3vw;
-}
-
-.blog_post h3 {
-  font-family: 'Arvo', serif;
-  font-size: 1.5vw;
-}
-
-.blog_post p {
-  font-size: 2vw;
-}
-
-.blog time {
-  font-size: 1.5vw;
-}
-
-.blog_filter {
-  display: none;
-}
-
-.social_template {
-  display: none;
+.blog h2, .portfolio h2 {
+  text-align: center;
 }
 
 .social ul {
@@ -111,14 +59,20 @@ a {
 }
 
 .social ul li {
-  font-family: 'Arvo', serif;
+  /*font-family: 'Arvo', serif;*/
   font-size: 3vw;
   text-align: center;
 }
 
 .social ul li a {
-  text-decoration: none;
   color: black;
+}
+
+.hamburger:before {
+  content: "\e909";
+  font-family: 'icomoon';
+  speak: none;
+  font-size: 5em;
 }
 
 #twitter:before {
@@ -156,22 +110,6 @@ a {
   speak: none;
 }
 
-.hamburger:before {
-  content: "\e909";
-  font-family: 'icomoon';
-  speak: none;
-  font-size: 8vw;
-}
-
-.portfolio_template {
-  display: none;
-}
-
-.portfolio_post h1 {
-  font-family: 'Arvo', serif;
-  font-size: 3vw;
-}
-
 .portfolio_post a {
   font-family: 'Arvo', serif;
   text-decoration: none;
@@ -179,17 +117,9 @@ a {
   font-size:2.5vw;
 }
 
-.portfolio_post p {
-  font-size: 1.5vw;
-}
-
-.portfolio_filter {
-  display: none;
-}
-
 @media only screen and (min-width: 640px) {
 
-  .page_header h1 {
+  .page_header h2 {
     display: block;
     width: 100%;
   }
@@ -214,10 +144,5 @@ a {
     list-style-type: none;
     justify-content: space-around;
     flex-wrap: wrap;
-  }
-
-  .main_nav ul li {
-    font-family: 'Arvo', serif;
-    font-size: 4vw
   }
 }

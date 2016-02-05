@@ -30,6 +30,11 @@
   display: none;
 }
 
+.article_body {
+  display: flex;
+  justify-content: flex-start;;
+}
+
 select {
   display: block;
   margin: 0 auto;

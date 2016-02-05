@@ -9,7 +9,7 @@ var blogData = [
     title:        'About Me',
     publishedOn:  '2016-02-01',
     category:     'about',
-    body:         '<img src="img/about_pic.png"><p>I am originally from Bellingham Washington.  I attended school at Western Washington University where I received a degree in Geophysics and Mathematics.  I went on to study geophysics at the University of Wyoming.  For the last three years I have worked as a Geophysicist for an oil services company in Houston, TX.  I am currently attending Code Fellows in Seattle, WA to pursue a development career.</p>'
+    body:         '<div><img src="img/about_pic.png"></div><p>I am originally from Bellingham Washington.  I attended school at Western Washington University where I received a degree in Geophysics and Mathematics.  I went on to study geophysics at the University of Wyoming.  For the last three years I have worked as a Geophysicist for an oil services company in Houston, TX.  I am currently attending Code Fellows in Seattle, WA to pursue a development career.</p>'
   },
   {
     author:       'Joe McClenahan',

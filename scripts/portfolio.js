@@ -11,6 +11,8 @@ function portfolio (data) {
 
 portfolio.all = [];
 
+// portfolioData = [];
+
 portfolio.prototype.toHtml = function() {
   var template = Handlebars.compile($('#portfolio_template').text());
   return template(this);
@@ -42,7 +44,7 @@ portfolio.fetchAll = function () {
   }
 };
 
-portfolio.loadAll = function(blogData) {
+portfolio.loadAll = function(portfolioData) {
   portfolioData.forEach(function(ele) {
     portfolio.all.push(new portfolio(ele));
   });

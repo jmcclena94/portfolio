@@ -34,7 +34,7 @@
   </script>
 
   <script id="filter_template" type="text/x-handlebars-template">
-    <option value="{{title}}">{{title}}</option>
+    <option class="filter_value" value="{{title}}">{{title}}</option>
   </script>
 
 </head>
@@ -55,7 +55,7 @@
       <section id="blog" class="blog">
         <h2>Blog</h2>
         <select id="blog_filter" class="blog_filter">
-          <option value="">-- Filter by Blog Title --</option>
+          <option class="filter_default" value="">-- Filter by Blog Title --</option>
         </select>
       </section>
       <section id="social" class="social">
@@ -65,7 +65,7 @@
       <section id="portfolio" class="portfolio">
         <h2>Portfolio</h2>
         <select id="portfolio_filter" class="portfolio_filter">
-          <option value="">-- Filter by Portfolio Item --</option>
+          <option class="filter_default" value="">-- Filter by Portfolio Item --</option>
         </select>
       </section>
     </div>
@@ -79,5 +79,10 @@
   <script src="scripts/social.js"></script>
   <script src="scripts/portfolio.js"></script>
   <script src="scripts/viewer.js"></script>
+  <script>
+    blog.fetchAll();
+    portfolio.fetchAll();
+    social.fetchAll();
+  </script>
 </body>
 </html>

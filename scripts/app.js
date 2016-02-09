@@ -1,8 +1,7 @@
-(function(){
-  'use strict';
-})();
-
-var blogs = [];
+'use strict';
+/* jshint -W040 */
+/* jshint -W117 */
+/* jshint -W097 */
 
 function blog (data) {
   this.author = data.author;
@@ -12,16 +11,42 @@ function blog (data) {
   this.category = data.category;
 }
 
+blog.all = [];
+
 blog.prototype.toHtml = function() {
   var template = Handlebars.compile($('#article_template').text());
   this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
   return template(this);
 };
 
-blogData.forEach(function(ele) {
-  blogs.push(new blog(ele));
-});
+blog.fetchAll = function () {
+  if (localStorage.blogData) {
+    $.ajax({
+      type: 'HEAD',
+      url: 'data/blogData.json',
+      success: function(data,message,xhr) {
+        var eTag = xhr.getResponseHeader('eTag');
+        if (!localStorage.eTag || eTag !== localStorage.eTag) {
+          localStorage.eTag = eTag;
+        } else {
+          blog.loadAll(JSON.parse(localStorage.blogData));
+        }
+      }
+    });
+    blog.loadAll(JSON.parse(localStorage.blogData));
+    viewer.initIndexPage();
+  } else {
+    $.get('data/blogData.json', function(data){
+      var stringData = JSON.stringify(data);
+      localStorage.setItem('blogData',stringData);
+      blog.loadAll(JSON.parse(localStorage.blogData));
+    });
+  }
+  viewer.initIndexPage();
+};
 
-blogs.forEach(function(a){
-  $('#blog').append(a.toHtml());
-});
+blog.loadAll = function(blogData) {
+  blogData.forEach(function(ele) {
+    blog.all.push(new blog(ele));
+  });
+};

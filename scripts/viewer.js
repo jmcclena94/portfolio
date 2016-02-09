@@ -1,6 +1,7 @@
-(function(){
-  'use strict';
-})();
+'use strict';
+/* jshint -W040 */
+/* jshint -W117 */
+/* jshint -W097 */
 
 var viewer = {};
 
@@ -14,13 +15,13 @@ portfolio.prototype.populatePortfolioFilter = function() {
   return template(this);
 };
 
-blogs.forEach(function(a){
-  $('#blog_filter').append(a.populateBlogFilter());
-});
-
-portfolios.forEach(function(a){
-  $('#portfolio_filter').append(a.populatePortfolioFilter());
-});
+// blog.all.forEach(function(a){
+//   $('#blog_filter').append(a.populateBlogFilter());
+// });
+//
+// portfolio.all.forEach(function(a){
+//   $('#portfolio_filter').append(a.populatePortfolioFilter());
+// });
 
 viewer.clickFunctions = function() {
   $('#blog_link').on('click',function(){
@@ -62,6 +63,24 @@ viewer.filterChangeFunctions = function () {
     } else {
       $('.portfolio_entry').fadeIn();
     }
+  });
+};
+
+viewer.initIndexPage = function() {
+  $('.blog_entry').remove();
+  $('.portfolio_entry').remove();
+  $('#social_list li').remove();
+  $('.filter_value').remove();
+  blog.all.forEach(function(a){
+    $('#blog').append(a.toHtml());
+    $('#blog_filter').append(a.populateBlogFilter());
+  });
+  portfolio.all.forEach(function(a){
+    $('#portfolio').append(a.toHtml());
+    $('#portfolio_filter').append(a.populatePortfolioFilter());
+  });
+  social.all.forEach(function(a){
+    $('#social_list').append(a.toHtml());
   });
 };
 

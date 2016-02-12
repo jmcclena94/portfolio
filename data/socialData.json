@@ -1,21 +1,26 @@
 [
   {
+    "type":"socialEntry",
     "name":"linkedin",
     "link":"https://www.linkedin.com/in/josephmcclenahan"
   },
   {
+    "type":"socialEntry",
     "name":"github",
     "link":"https://github.com/jmcclena94"
   },
   {
+    "type":"socialEntry",
     "name":"twitter",
-    "link":"https://twitter.com/beverlyfreaks"
+    "link":"https://twitter.com/joe_mcclenahan"
   },
   {
+    "type":"socialEntry",
     "name":"facebook",
     "link":"https://www.facebook.com/joe.mcclenahan"
   },
   {
+    "type":"socialEntry",
     "name":"instagram",
     "link":"https://www.instagram.com/beverlyfreaks/"
   }

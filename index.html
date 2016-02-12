@@ -74,14 +74,10 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
-  <script src="scripts/app.js"></script>
-  <script src="scripts/social.js"></script>
-  <script src="scripts/portfolio.js"></script>
+  <script src="scripts/datacombine.js"></script>
   <script src="scripts/viewer.js"></script>
   <script>
-    blog.fetchAll(viewer);
-    portfolio.fetchAll(viewer);
-    social.fetchAll(viewer);
+    Database.fetchAll(viewer.initIndexPage);
   </script>
 </body>
 </html>

@@ -1,3 +1,39 @@
+.name_logo h2 {
+  align-content: center; }
 
+.main_nav {
+  height: 40%; }
+  .main_nav .hamburger {
+    width: 40%;
+    align-self: flex-end; }
+  .main_nav .hamburger:before {
+    content: "\e909";
+    font-family: 'icomoon';
+    speak: none;
+    font-size: 5em; }
+  .main_nav ul {
+    display: none;
+    list-style-type: none; }
+    .main_nav ul li {
+      font-size: 2em;
+      text-align: right; }
+    .main_nav ul #blog_link a:after {
+      margin-left: 10px;
+      content: "\e900";
+      font-family: 'icomoon';
+      speak: none; }
+    .main_nav ul #social_link a:after {
+      margin-left: 10px;
+      content: "\e901";
+      font-family: 'icomoon';
+      speak: none; }
+    .main_nav ul #portfolio_link a:after {
+      margin-left: 10px;
+      content: "\e908";
+      font-family: 'icomoon';
+      speak: none; }
+
+.main_nav:hover ul {
+  display: block; }
 
 /*# sourceMappingURL=new-modules.css.map */

@@ -3,10 +3,14 @@
 <head>
   <title>Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="vendors/normalize.css" type="text/css" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet" type="text/css">
-  <link href="styles/base.css" type="text/css" rel="stylesheet"/>
-  <link href="styles/layout.css" type="text/css" rel="stylesheet"/>
-  <link href="styles/modules.css" type="text/css" rel="stylesheet"/>
+  <link href="styles/new-base.css" type="text/css" rel="stylesheet"/>
+  <link href="styles/new-layout.css" type="text/css" rel="stylesheet"/>
+  <link href="styles/new-modules.css" type="text/css" rel="stylesheet"/>
+  <!-- <link href="styles/base.css" type="text/css" rel="stylesheet"/> -->
+  <!-- <link href="styles/layout.css" type="text/css" rel="stylesheet"/> -->
+  <!-- <link href="styles/modules.css" type="text/css" rel="stylesheet"/> -->
   <link href="vendors/icomoon/style.css" type="text/css" rel="stylesheet"/>
 
   <script id="article_template" type="text/x-handlebars-template">
@@ -40,9 +44,11 @@
 </head>
 <body>
   <div id="page">
-    <header class="page_header">
-      <h2>Joe McClenahan</h2>
-      <nav class="main_nav">
+    <header class="flexbox page_header">
+      <div class="flexbox name_logo">
+        <h2>Joe McClenahan</h2>
+      </div>
+      <nav class="flexbox main_nav">
         <div class="hamburger"></div>
         <ul>
           <li id="blog_link"><a href="#">Blog</a></li>

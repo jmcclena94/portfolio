@@ -1,0 +1,19 @@
+.flexbox {
+  display: flex;
+  margin: 1% 1%;
+}
+
+.page_header {
+  justify-content: space-between;
+  height: 300px;
+
+  .name_logo {
+    width: 63%;
+    justify-content: flex-start;
+  }
+
+  .main_nav {
+    width: 33%;
+    flex-direction: column;
+  }
+}

@@ -51,9 +51,9 @@
       <nav class="flexbox main_nav">
         <div class="hamburger"></div>
         <ul>
-          <li id="blog_link"><a href="#">Blog</a></li>
-          <li id="social_link"><a href="#">Social</a></li>
-          <li id="portfolio_link"><a href="#">Portfolio</a></li>
+          <li id="blog_link"><a href="/">Blog</a></li>
+          <li id="social_link"><a href="/social">Social</a></li>
+          <li id="portfolio_link"><a href="/portfolio">Portfolio</a></li>
         </ul>
       </nav>
     </header>
@@ -80,10 +80,11 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
+  <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
   <script src="scripts/datacombine.js"></script>
   <script src="scripts/viewer.js"></script>
-  <script>
-    Database.fetchAll(viewer.initIndexPage);
-  </script>
+
+  <script src="scripts/controller.js"></script>
+  <script src="scripts/routes.js"></script>
 </body>
 </html>

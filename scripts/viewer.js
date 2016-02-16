@@ -26,6 +26,9 @@
   };
 
   viewer.initIndexPage = function() {
+    $('.blog_entry').remove();
+    $('.portfolio_entry').remove();
+    $('.filter_value').remove();
     Database.all.forEach(function(a){
       if (a.type === 'blogEntry') {
         $('#blog').append(a.blogToHtml());

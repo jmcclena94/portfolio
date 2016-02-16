@@ -1,9 +1,9 @@
 (function(module) {
   var blogController = {},
-      socialController = {},
       portfolioController = {};
 
   blogController.index = function() {
+    $('.blog_entry').remove();
     Database.fetchAll(viewer.initIndexPage);
 
     $('#content > section').hide();
@@ -11,15 +11,8 @@
 
   };
 
-  socialController.index = function() {
-    Database.fetchAll(viewer.initIndexPage);
-
-    $('#content > section').hide();
-    $('#social').show();
-
-  };
-
   portfolioController.index = function() {
+    $('.portfolio_entry').remove();
     Database.fetchAll(viewer.initIndexPage);
 
     $('#content > section').hide();
@@ -28,6 +21,5 @@
   };
 
   module.blogController = blogController;
-  module.socialController = socialController;
   module.portfolioController = portfolioController;
 })(window);

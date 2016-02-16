@@ -8,9 +8,6 @@
   <link href="styles/new-base.css" type="text/css" rel="stylesheet"/>
   <link href="styles/new-layout.css" type="text/css" rel="stylesheet"/>
   <link href="styles/new-modules.css" type="text/css" rel="stylesheet"/>
-  <!-- <link href="styles/base.css" type="text/css" rel="stylesheet"/> -->
-  <!-- <link href="styles/layout.css" type="text/css" rel="stylesheet"/> -->
-  <!-- <link href="styles/modules.css" type="text/css" rel="stylesheet"/> -->
   <link href="vendors/icomoon/style.css" type="text/css" rel="stylesheet"/>
 
   <script id="article_template" type="text/x-handlebars-template">
@@ -40,44 +37,49 @@
   <script id="filter_template" type="text/x-handlebars-template">
     <option class="filter_value" value="{{title}}">{{title}}</option>
   </script>
-
 </head>
 <body>
-  <div id="page">
-    <header class="flexbox page_header">
-      <div class="flexbox name_logo">
-        <h2>Joe McClenahan</h2>
-      </div>
-      <nav class="flexbox main_nav">
+  <header>
+    <nav class="flexbox main_nav">
+      <div class="flexbox navigation">
         <div class="hamburger"></div>
         <ul>
-          <li id="blog_link"><a href="/">Blog</a></li>
-          <li id="social_link"><a href="/social">Social</a></li>
-          <li id="portfolio_link"><a href="/portfolio">Portfolio</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/portfolio">Portfolio</a></li>
         </ul>
-      </nav>
-    </header>
-    <div id="content">
-      <section id="blog" class="blog">
-        <h2>Blog</h2>
-        <select id="blog_filter" class="blog_filter">
-          <option class="filter_default" value="">-- Filter by Blog Title --</option>
-        </select>
-      </section>
-      <section id="social" class="social">
-        <ul id="social_list">
+      </div>
+      <div class="contact">
+        <ul>
+          <li><a href="www.linkedin.com/in/josephmcclenahan"><span id="linkedin"></span></a></li>
+          <li><a href="www.github.com/jmcclena94"><span id="github"></span></a></li>
+          <li><a href="www.twitter.com/joe_mcclenahan"><span id="twitter"></span></a></li>
+          <li><a href="www.instagram.com/beverlyfreaks/"><span id="instagram"></span></a></li>
+          <li><a href="www.facebook.com/joe.mcclenahan"><span id="facebook"></span></a></li>
         </ul>
-      </section>
-      <section id="portfolio" class="portfolio">
-        <h2>Portfolio</h2>
-        <select id="portfolio_filter" class="portfolio_filter">
-          <option class="filter_default" value="">-- Filter by Portfolio Item --</option>
-        </select>
-      </section>
+      </div>
+    </nav>
+    <div class="flexbox title">
+      <img src="../img/landscape.jpg" />
+      <h3>Joe McClenahan</h3>
     </div>
-    <footer>
-    </footer>
+  </header>
+  <div id="content">
+    <section id="blog" class="blog">
+      <h2>Blog</h2>
+      <select id="blog_filter" class="blog_filter">
+        <option class="filter_default" value="">-- Filter by Blog Title --</option>
+      </select>
+    </section>
+    <section id="portfolio" class="portfolio">
+      <h2>Portfolio</h2>
+      <select id="portfolio_filter" class="portfolio_filter">
+        <option class="filter_default" value="">-- Filter by Portfolio Item --</option>
+      </select>
+    </section>
   </div>
+  <footer>
+  </footer>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.js"></script>
   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>

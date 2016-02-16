@@ -26,24 +26,13 @@
   };
 
   viewer.initIndexPage = function() {
-    $('.blog_entry').remove();
-    $('.portfolio_entry').remove();
-    $('.filter_value').remove();
     Database.all.forEach(function(a){
       if (a.type === 'blogEntry') {
         $('#blog').append(a.blogToHtml());
         $('#blog_filter').append(a.populateFilter());
-      }
-    });
-    Database.all.forEach(function(a){
-      if (a.type === 'portfolioEntry') {
+      } else if (a.type === 'portfolioEntry') {
         $('#portfolio').append(a.portfolioToHtml());
         $('#portfolio_filter').append(a.populateFilter());
-      }
-    });
-    Database.all.forEach(function(a){
-      if (a.type === 'socialEntry') {
-        $('#social_list').append(a.socialToHtml());
       }
     });
   };

@@ -11,7 +11,6 @@
       this[element] = opts[element];
     },this);
   }
-  Database.all = [];
 
   Database.prototype.blogToHtml = function() {
     var template = Handlebars.compile($('#article_template').text());
@@ -64,17 +63,12 @@
               var stringData = JSON.stringify(data);
               localStorage.setItem('portfolioData',stringData);
               Database.loadAll(JSON.parse(localStorage.portfolioData));
-            });
-            $.get(('data/socialData.json'), function(data){
-              var stringData = JSON.stringify(data);
-              localStorage.setItem('socialData',stringData);
-              Database.loadAll(JSON.parse(localStorage.socialData));
               viewer();
             });
           } else {
+            Database.all = [];
             Database.loadAll(JSON.parse(localStorage.blogData));
             Database.loadAll(JSON.parse(localStorage.portfolioData));
-            Database.loadAll(JSON.parse(localStorage.socialData));
             viewer();
           }
         }
@@ -89,11 +83,6 @@
         var stringData = JSON.stringify(data);
         localStorage.setItem('portfolioData',stringData);
         Database.loadAll(JSON.parse(localStorage.portfolioData));
-      });
-      $.get(('data/socialData.json'), function(data){
-        var stringData = JSON.stringify(data);
-        localStorage.setItem('socialData',stringData);
-        Database.loadAll(JSON.parse(localStorage.socialData));
         viewer();
       });
     }

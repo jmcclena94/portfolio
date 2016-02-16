@@ -100,7 +100,7 @@
     z-index: -1;
   }
 
-  h3 {
+  h2 {
     left: 0;
     position: absolute;
     text-align: center;
@@ -172,65 +172,4 @@
     }
   }
 }
-
-
-
 }
-
-
-
-
-// .name_logo h2 {
-//   align-content: center;
-// }
-//
-// .main_nav {
-//   height: 80%;
-//
-//   .hamburger {
-//     width: 40%;
-//     align-self: flex-end;
-//   }
-//
-//   .hamburger:before {
-//     content: "\e909";
-//     font-family: 'icomoon';
-//     speak: none;
-//     font-size: 5em;
-//   }
-//
-//   ul {
-//     display: none;
-//     list-style-type: none;
-//
-//     li {
-//       font-size: 2em;
-//       text-align: right;
-//     }
-//
-//     #blog_link a:after {
-//       margin-left: 10px;
-//       content: "\e900";
-//       font-family: 'icomoon';
-//       speak: none;
-//     }
-//
-//     #social_link a:after {
-//       margin-left: 10px;
-//       content: "\e901";
-//       font-family: 'icomoon';
-//       speak: none;
-//     }
-//
-//     #portfolio_link a:after {
-//       margin-left: 10px;
-//       content: "\e908";
-//       font-family: 'icomoon';
-//       speak: none;
-//     }
-//   }
-// }
-//
-// .main_nav:hover ul {
-//     display: block;
-//   }

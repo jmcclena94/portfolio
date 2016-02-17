@@ -8,7 +8,6 @@
 
     $('#content > section').hide();
     $('#blog').show();
-
   };
 
   portfolioController.index = function() {
@@ -17,7 +16,6 @@
 
     $('#content > section').hide();
     $('#portfolio').show();
-
   };
 
   module.blogController = blogController;

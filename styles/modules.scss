@@ -40,8 +40,9 @@
     }
 
   .contact {
+    position: relative;
 
-    ul {
+    .contact_list {
       display: flex;
       justify-content: space-around;
       list-style-type: none;
@@ -86,6 +87,23 @@
         color: white;
       }
     }
+
+    .repo_list {
+      display: flex;
+      list-style-type: none;
+      flex-direction: column;
+      background-color: black;
+      width: 150px;
+      position: absolute;
+      top: 40px;
+      left: 25%;
+      li {
+        a{
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
   }
 }
 
@@ -106,28 +124,47 @@
     text-align: center;
     width: 100%;
     color: white;
-    top: 200px;
+    top: 150px;
   }
 }
 
-.blog h2, .portfolio h2 {
-  text-align: center;
+.blog {
+  h2 {
+    text-align: center;
+  }
 }
 
-.article_body div, p {
-  margin: 5% 5% 5% 5%;
-  max-width: 50%;
+.portfolio {
+  h2 {
+    text-align: center;
+  }
 
-  img {
+  .portfolio_container {
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    .portfolio_items {
+      width: 75%;
+      flex-direction: column;
+    }
+  }
+}
+
+.article_body {
+  div {
+    margin: 5% 5% 5% 5%;
+    max-width: 50%;
+
+    img {
+      max-width: 50%;
+    }
+  }
+
+  p {
+    margin: 5% 5% 5% 5%;
     max-width: 50%;
   }
-}
-
-.portfolio_post a {
-  font-family: 'Arvo', serif;
-  text-decoration: none;
-  color: black;
-  font-size:2.5vw;
 }
 
 @media only screen and (min-width: 640px) {

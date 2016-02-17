@@ -23,8 +23,8 @@
 
   <script id="portfolio_template" type="text/x-handlebars-template">
     <article class="portfolio_entry" data-title="{{{title}}}">
-      <h3><a href="{{url}}">{{title}}</a></h3>
-      <section class="portfolio_body">
+      <h4><a href="{{url}}">{{title}}</a></h4>
+      <section class="article_body">
         {{{description}}}
       </section>
     </article>
@@ -49,13 +49,14 @@
         </ul>
       </div>
       <div class="contact">
-        <ul>
+        <ul class="contact_list">
           <li><a href="www.linkedin.com/in/josephmcclenahan"><span id="linkedin"></span></a></li>
           <li><a href="www.github.com/jmcclena94"><span id="github"></span></a></li>
           <li><a href="www.twitter.com/joe_mcclenahan"><span id="twitter"></span></a></li>
           <li><a href="www.instagram.com/beverlyfreaks/"><span id="instagram"></span></a></li>
           <li><a href="www.facebook.com/joe.mcclenahan"><span id="facebook"></span></a></li>
         </ul>
+        <ul class="repo_list" id="repo_list"></ul>
       </div>
     </nav>
     <div class="flexbox title">
@@ -75,6 +76,9 @@
       <select id="portfolio_filter" class="portfolio_filter">
         <option class="filter_default" value="">-- Filter by Portfolio Item --</option>
       </select>
+      <div class="flexbox portfolio_container">
+        <div class="flexbox portfolio_items" id="portfolio_items"><h3>Selected previous work</h3></div>
+      </div>
     </section>
   </div>
   <footer>
@@ -85,6 +89,9 @@
   <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
   <script src="scripts/datacombine.js"></script>
   <script src="scripts/viewer.js"></script>
+  <script src="scripts/githubToken.js"></script>
+  <script src="scripts/repos.js"></script>
+  <script src="scripts/repoView.js"></script>
 
   <script src="scripts/controller.js"></script>
   <script src="scripts/routes.js"></script>

@@ -25,18 +25,29 @@
     });
   };
 
+  viewer.hoverFunctions = function() {
+    $('.repo_list').slideUp();
+    $('#github').mouseenter(function() {
+      $('.repo_list').slideDown();
+    });
+    $('.repo_list').mouseleave(function() {
+      $('.repo_list').slideUp();
+    });
+  };
+
   viewer.initIndexPage = function() {
     Database.all.forEach(function(a){
       if (a.type === 'blogEntry') {
         $('#blog').append(a.blogToHtml());
         $('#blog_filter').append(a.populateFilter());
       } else if (a.type === 'portfolioEntry') {
-        $('#portfolio').append(a.portfolioToHtml());
+        $('#portfolio_items').append(a.portfolioToHtml());
         $('#portfolio_filter').append(a.populateFilter());
       }
     });
+    repos.requestRepos(repoView.index);
   };
-
+  $(viewer.hoverFunctions());
   $(viewer.filterChangeFunctions());
 
   module.viewer = viewer;

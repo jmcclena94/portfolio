@@ -26,40 +26,54 @@
         color: white; }
   .main_nav .navigation:hover ul {
     display: block; }
-  .main_nav .contact ul {
-    display: flex;
-    justify-content: space-around;
-    list-style-type: none; }
-    .main_nav .contact ul #linkedin:before {
-      font-size: 2em;
-      content: "\e907";
-      font-family: 'icomoon';
-      speak: none;
-      color: white; }
-    .main_nav .contact ul #twitter:before {
-      font-size: 2em;
-      content: "\e904";
-      font-family: 'icomoon';
-      speak: none;
-      color: white; }
-    .main_nav .contact ul #facebook:before {
-      font-size: 2em;
-      content: "\e902";
-      font-family: 'icomoon';
-      speak: none;
-      color: white; }
-    .main_nav .contact ul #github:before {
-      font-size: 2em;
-      content: "\e906";
-      font-family: 'icomoon';
-      speak: none;
-      color: white; }
-    .main_nav .contact ul #instagram:before {
-      font-size: 2em;
-      content: "\e903";
-      font-family: 'icomoon';
-      speak: none;
-      color: white; }
+  .main_nav .contact {
+    position: relative; }
+    .main_nav .contact .contact_list {
+      display: flex;
+      justify-content: space-around;
+      list-style-type: none; }
+      .main_nav .contact .contact_list #linkedin:before {
+        font-size: 2em;
+        content: "\e907";
+        font-family: 'icomoon';
+        speak: none;
+        color: white; }
+      .main_nav .contact .contact_list #twitter:before {
+        font-size: 2em;
+        content: "\e904";
+        font-family: 'icomoon';
+        speak: none;
+        color: white; }
+      .main_nav .contact .contact_list #facebook:before {
+        font-size: 2em;
+        content: "\e902";
+        font-family: 'icomoon';
+        speak: none;
+        color: white; }
+      .main_nav .contact .contact_list #github:before {
+        font-size: 2em;
+        content: "\e906";
+        font-family: 'icomoon';
+        speak: none;
+        color: white; }
+      .main_nav .contact .contact_list #instagram:before {
+        font-size: 2em;
+        content: "\e903";
+        font-family: 'icomoon';
+        speak: none;
+        color: white; }
+    .main_nav .contact .repo_list {
+      display: flex;
+      list-style-type: none;
+      flex-direction: column;
+      background-color: black;
+      width: 150px;
+      position: absolute;
+      top: 40px;
+      left: 25%; }
+      .main_nav .contact .repo_list li a {
+        text-decoration: none;
+        color: white; }
 
 .title {
   justify-content: space-around; }
@@ -77,20 +91,27 @@
     color: white;
     top: 150px; }
 
-.blog h2, .portfolio h2 {
+.blog h2 {
   text-align: center; }
 
-.article_body div, p {
+.portfolio h2 {
+  text-align: center; }
+.portfolio .portfolio_container {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+  .portfolio .portfolio_container .portfolio_items {
+    width: 75%;
+    flex-direction: column; }
+
+.article_body div {
   margin: 5% 5% 5% 5%;
   max-width: 50%; }
-  .article_body div img, p img {
+  .article_body div img {
     max-width: 50%; }
-
-.portfolio_post a {
-  font-family: 'Arvo', serif;
-  text-decoration: none;
-  color: black;
-  font-size: 2.5vw; }
+.article_body p {
+  margin: 5% 5% 5% 5%;
+  max-width: 50%; }
 
 @media only screen and (min-width: 640px) {
   .main_nav .navigation {

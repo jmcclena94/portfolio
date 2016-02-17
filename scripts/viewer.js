@@ -36,6 +36,7 @@
   };
 
   viewer.initIndexPage = function() {
+    console.log('Filtering');
     Database.all.forEach(function(a){
       if (a.type === 'blogEntry') {
         $('#blog').append(a.blogToHtml());

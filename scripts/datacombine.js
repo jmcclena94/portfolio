@@ -29,6 +29,8 @@
   };
 
   Database.prototype.populateFilter = function() {
+    console.log('filters');
+    // $('.filter_value').remove();
     var template;
     if (this.type === 'blogEntry') {
       template = Handlebars.compile($('#filter_template').text());

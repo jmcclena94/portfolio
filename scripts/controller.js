@@ -15,7 +15,7 @@
   portfolioController.index = function() {
     $('.filter_value').remove();
     $('.portfolio_entry').remove();
-    Database.fetchAll(viewer.initIndexPage);
+    viewer.initIndexPage();
 
     $('#content > section').hide();
     $('#portfolio').show();

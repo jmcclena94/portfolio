@@ -12,6 +12,8 @@
     },this);
   }
 
+  Database.all = [];
+
   Database.prototype.blogToHtml = function() {
     var template = Handlebars.compile($('#article_template').text());
     this.daysAgo = parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000);
@@ -29,8 +31,6 @@
   };
 
   Database.prototype.populateFilter = function() {
-    console.log('filters');
-    // $('.filter_value').remove();
     var template;
     if (this.type === 'blogEntry') {
       template = Handlebars.compile($('#filter_template').text());
@@ -47,7 +47,7 @@
     });
   };
 
-  Database.fetchAll = function(viewer) {
+  Database.fetchAll = function(callback) {
     if (localStorage.blogData) {
       $.ajax({
         type: 'HEAD',
@@ -65,13 +65,12 @@
               var stringData = JSON.stringify(data);
               localStorage.setItem('portfolioData',stringData);
               Database.loadAll(JSON.parse(localStorage.portfolioData));
-              viewer();
+              callback();
             });
           } else {
-            Database.all = [];
             Database.loadAll(JSON.parse(localStorage.blogData));
             Database.loadAll(JSON.parse(localStorage.portfolioData));
-            viewer();
+            callback();
           }
         }
       });
@@ -85,7 +84,7 @@
         var stringData = JSON.stringify(data);
         localStorage.setItem('portfolioData',stringData);
         Database.loadAll(JSON.parse(localStorage.portfolioData));
-        viewer();
+        callback();
       });
     }
   };

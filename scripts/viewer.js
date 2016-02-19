@@ -26,17 +26,16 @@
   };
 
   viewer.hoverFunctions = function() {
-    $('.repo_list').slideUp();
+    $('.repo_list').slideToggle();
     $('#github').mouseenter(function() {
-      $('.repo_list').slideDown();
+      $('.repo_list').slideToggle();
     });
     $('.repo_list').mouseleave(function() {
-      $('.repo_list').slideUp();
+      $('.repo_list').slideToggle();
     });
   };
 
   viewer.initIndexPage = function() {
-    console.log('Filtering');
     Database.all.forEach(function(a){
       if (a.type === 'blogEntry') {
         $('#blog').append(a.blogToHtml());
